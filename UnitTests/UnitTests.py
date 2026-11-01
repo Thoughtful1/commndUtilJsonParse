@@ -24,7 +24,7 @@ class TestStringMethods(unittest.TestCase):
     def test_check_config(self):
         self.assertEqual(ConsoleUtility.check_if_config_exist(), False)
 
-    def test_json_recognicnition(self):
+    def test_json_recognition(self):
         json_placeholder='{"date": 1632494625.0943308, "name": "bd702acc-c80b-4df7-b2aa-a9eb88f8caa3", "type": "client", "age": "int.rand:81"}'
         ConsoleUtility.check_data_schema(json_placeholder, self.path_to_files_saving, self.file_name, self.file_prefix)
 
